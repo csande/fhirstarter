@@ -214,7 +214,7 @@ app.add_providers(provider)
 def amend_capability_statement(
     capability_statement: MutableMapping[str, Any], request: Request, response: Response
 ) -> MutableMapping[str, Any]:
-    capability_statement["publisher"] = "Canvas Medical"
+    capability_statement["version"] = "1.0"
     return capability_statement
 
 
