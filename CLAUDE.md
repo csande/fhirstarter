@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-FHIRStarter is an ASGI [FHIR](https://hl7.org/fhir/) API framework built on top of FastAPI and the [fhir.resources](https://pypi.org/project/fhir.resources/) Pydantic models. It is published to PyPI as `fhirstarter` and is maintained by Canvas Medical against Canvas's business needs (rather than as a general-purpose project).
+FHIRStarter is an ASGI [FHIR](https://hl7.org/fhir/) API framework built on top of FastAPI and the [fhir.resources](https://pypi.org/project/fhir.resources/) Pydantic models.
 
 The framework supports three FHIR sequences: STU3, R4B, and R5. The active sequence is selected at process start via the `FHIR_SEQUENCE` environment variable (default `R5`); much of the package's import behavior branches on this value.
 
