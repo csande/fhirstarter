@@ -1,8 +1,8 @@
 # fhirstarter
 
 <p>
-  <a href="https://github.com/canvas-medical/fhirstarter/actions?query=workflow%3Atests+event%3Apush+branch%3Amain" target="_blank">
-    <img src="https://img.shields.io/github/actions/workflow/status/canvas-medical/fhirstarter/tests.yml?branch=main&event=push&label=tests" alt="tests">
+  <a href="https://github.com/csande/fhirstarter/actions?query=workflow%3Atests+event%3Apush+branch%3Amain" target="_blank">
+    <img src="https://img.shields.io/github/actions/workflow/status/csande/fhirstarter/tests.yml?branch=main&event=push&label=tests" alt="tests">
   </a>
   <a href="https://pypi.org/project/fhirstarter/">
     <img src="https://img.shields.io/pypi/v/fhirstarter">
@@ -173,7 +173,7 @@ It is possible to customize the capability statement by setting a capability sta
 def amend_capability_statement(
     capability_statement: MutableMapping[str, Any], request: Request, response: Response
 ) -> MutableMapping[str, Any]:
-    capability_statement["publisher"] = "Canvas Medical"
+    capability_statement["version"] = "1.0"
     return capability_statement
 
 app.set_capability_statement_modifier(amend_capability_statement)
