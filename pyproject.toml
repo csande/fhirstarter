@@ -5,7 +5,7 @@ description = "An ASGI FHIR API framework built on top of FastAPI and FHIR Resou
 readme = "README.md"
 requires-python = ">=3.10,<3.15"
 license = "MIT"
-license-files = ["LICENSE.md"]
+license-files = ["LICENSE"]
 authors = [{ name = "Christopher Sande", email = "csande@gmail.com" }]
 maintainers = [{ name = "Christopher Sande", email = "csande@gmail.com" }]
 keywords = ["fhir", "api", "server", "resources", "framework", "fastapi", "healthcare", "hl7"]
@@ -43,7 +43,7 @@ dependencies = [
     "orjson>=3.10.3,<4",
     "python-multipart>=0.0.31,<0.0.32",
     "tomli>=2.0.1,<3.0.0 ; python_version < '3.11'",
-    "tzdata>=2026.2,<2026.3; platform_system == 'Windows'",
+    "tzdata>=2026.2,<2026.7; platform_system == 'Windows'",
 ]
 
 [project.urls]
