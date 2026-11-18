@@ -1,9 +1,9 @@
 [project]
 name = "fhirstarter"
-version = "4.2.2"
+version = "5.0.0"
 description = "An ASGI FHIR API framework built on top of FastAPI and FHIR Resources"
 readme = "README.md"
-requires-python = ">=3.10,<3.15"
+requires-python = ">=3.11,<3.15"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Christopher Sande", email = "csande@gmail.com" }]
@@ -19,7 +19,6 @@ classifiers = [
     "Intended Audience :: Information Technology",
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -37,7 +36,7 @@ dependencies = [
     "asyncache>=0.3.1,<0.4",
     "cachetools>=5.5.1,<6",
     "eval-type-backport>=0.2.2,<0.5",
-    "fastapi>=0.103.1,<0.163.0",
+    "fastapi>=0.162.6,<0.163.0",
     "fhir.resources[xml]>=8.0.0,<9.0.0",
     "httpx>=0.24.1,<0.29.0",
     "orjson>=3.10.3,<4",
@@ -122,7 +121,7 @@ max-line-length = 100
 [tool.ruff.format]
 
 [tool.ty.environment]
-python-version = "3.10"
+python-version = "3.11"
 
 [tool.ty.src]
 include = ["fhirstarter"]
